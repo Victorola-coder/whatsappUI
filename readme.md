@@ -4,6 +4,11 @@
 
 #30daysofcodewithVickyJay challenge, Day-2 cloning the full WhatsApp webpages, adding functionalities - ReactJS | Tailwindcss | few others libraries
 
+## Tech Stack
+
+**Client:** React, TailwindCSS, Javacript
+
+
 # CLone Locally
 
 Make sure [Git](https://git-scm.com/downloads) is installed on your machine
@@ -28,7 +33,7 @@ to discuss what you would like to change.
 Please make sure to update tests as appropriate.
 
 # Progess
-- made the navbar
+- Navbar done
 # Lincense
 
 [MIT](https://choosealicense.com/licenses/mit/)
