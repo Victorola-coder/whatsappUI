@@ -34,6 +34,13 @@ Please make sure to update tests as appropriate.
 
 # Progess
 - Navbar done
+
+# Author
+[VickyJAY](https://github.com/Victorola-coder/)
+
+# Live preview
+
+check live link [here](https://whatsapp.vercel.app)
 # Lincense
 
 [MIT](https://choosealicense.com/licenses/mit/)
