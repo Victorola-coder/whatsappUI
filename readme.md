@@ -36,7 +36,7 @@ Please make sure to update tests as appropriate.
 - Navbar done
 
 # Author
-[VickyJAY](https://github.com/Victorola-coder/)
+[VickyJay](https://github.com/Victorola-coder/)
 
 # Live preview
 
