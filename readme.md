@@ -33,7 +33,8 @@ to discuss what you would like to change.
 Please make sure to update tests as appropriate.
 
 # Progess
-- Navbar done
+## day 1 & 2
+- Navbar [desktop and mobile almost done]
 
 # Author
 [VickyJay](https://github.com/Victorola-coder/)
