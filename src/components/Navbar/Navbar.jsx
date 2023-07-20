@@ -1,5 +1,7 @@
-import logo from "../../images/logo.png";
 import { NavLink } from "react-router-dom";
+import OutlinedButton from "./button";
+import { DownloadIcon } from "../../assets/icons/download";
+import logo from "../../assets/images/logo.png";
 
 const Navbar = () => {
   const navlinks = [
@@ -30,8 +32,8 @@ const Navbar = () => {
     },
     {
       id: 5,
-      text: "For Bussiness",
-      link: "/bussines",
+      text: "For Business",
+      link: "/business",
       //   active: false,
     },
   ];
@@ -43,7 +45,7 @@ const Navbar = () => {
           <img
             src={logo}
             draggable={false}
-            className={`w-[130px]`}
+            className={`max-w-[130px]`}
             alt="logo"
           />
         </a>
@@ -66,10 +68,28 @@ const Navbar = () => {
           ))}
         </div>
 
-        <div>
-          <a href="/whatsapp-web">
-            <p className="text-base">WhatsApp Web</p>
-          </a>
+        <div className={`flex items-center gap-6`}>
+          <NavLink to="/whatsapp-web">
+            {({ isActive }) => {
+              <span
+                className={`before:content-[''] before:bg-[#25d366] before:absolute before:h-[2px] before:-bottom-1 before:transition-all before:duration-300 ${
+                  isActive
+                    ? "text-[#25d366] before:w-full"
+                    : "text-[#1c1e21] before:w-[0px] hover:before:w-full"
+                } relative`}
+              >
+                Hello
+              </span>;
+            }}
+          </NavLink>
+          <button
+            className={`flex items-center gap-5 rounded-full bg-green p-[14px_20px] animate- transition-all duration-500 hover:bg-blackk hover:text-white border-blackk border-[1px] border-solid`}
+          >
+            Download
+            <span>
+              <DownloadIcon />
+            </span>
+          </button>
         </div>
       </div>
     </div>
