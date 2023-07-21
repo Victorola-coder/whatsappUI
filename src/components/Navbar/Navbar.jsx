@@ -1,10 +1,16 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { DownloadIcon } from "../../assets/icons/download";
+import {
+  Download,
+  Twitter,
+  Youtube,
+  Facebook,
+  Instagram,
+} from "../../assets/icons/Icons";
 import logo from "../../assets/images/logo.png";
 
 const Navbar = () => {
-  const [isOpened, setIsOpened] = useState(false);
+  const [isOpened, setIsOpened] = useState(true);
 
   const navlinks = [
     {
@@ -93,7 +99,7 @@ const Navbar = () => {
           >
             Download
             <span>
-              <DownloadIcon />
+              <Download />
             </span>
           </button>
         </div>
@@ -130,18 +136,18 @@ const Navbar = () => {
                 isOpened ? " translate-y-0" : "translate-x-[150%]"
               } pt-4 left-0 right-0`}
             >
-              <ul className="px-3 mx-auto">
-                <div className="flex flex-col gap-[10px] justify-between items-cente[22px]">
+              <ul className="mx-auto">
+                <div className="flex flex-col gap-[30px] justify-between">
                   {navlinks.map((navLink, index) => (
                     <div
                       key={index}
-                      className="flex items-center gap-1 group"
+                      className="bg-red-400s border-t"
                       onClick={() => setIsOpened(!isOpened)}
                     >
-                      <li className="w-full py-2">
+                      <li className="w-full mt5 py-2">
                         <a
                           href={navLink.link}
-                          className="text-[#001534] font-semibold text-[18px] leading-[33px]  [#42AAFF] p-3 rounded-lg transition-all duration-300 hover:text-["
+                          className="text-[#001534] text-[32px] leading-[1em] font-medium p-4 transition-all duration-300 hover:text-["
                         >
                           {navLink.text}
                         </a>
@@ -150,6 +156,43 @@ const Navbar = () => {
                   ))}
                 </div>
               </ul>
+              <div className="bg-black/80 mt-3 p-4 flex flex-col space-y-4 items-center">
+                <button
+                  className={`flex items-center justify-center gap-3  rounded-full bg-green p-[13px_32px] w-[300px] animate- transition-all duration-500 hover:bg-blackk hover:text-white`}
+                >
+                  Download
+                  <span>
+                    <Download />
+                  </span>
+                </button>
+                <div className={`border-t w-full`}>
+                  <div className="mt-3 flex justify-center items-center gap-4">
+                    <Twitter />
+                    <Youtube />
+                    <Instagram />
+                    <Facebook />
+                  </div>
+                </div>
+                <div className="mt-3 flex  items-center justify-between space-x-9 text-white">
+                  <div>
+                    <p>Terms & Privacy Policy</p>
+                    <p>
+                      <span>{new Date().getFullYear()}</span>&copy; WhatsApp LLC
+                    </p>
+                  </div>
+                  <div>
+                    <select
+                      type="text"
+                      value={`English`}
+                      className="w-[200px] bg-black font-semibold  p-3 outline-white outline pl-4 rounded-full text-base"
+                    >
+                      <option value="">English</option>
+                      <option value="">English</option>
+                      <option value="">English</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div>
@@ -168,7 +211,7 @@ const Navbar = () => {
             <button
               className={`p-2 bg-green  animate- transition-all duration-500 hover:bg-blackk hover:text-white border-blackk border-[1px] rounded-full border-solid`}
             >
-              <DownloadIcon />
+              <Download />
             </button>
           </div>
         </div>

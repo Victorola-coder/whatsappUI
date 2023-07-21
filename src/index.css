@@ -2,16 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* outline: 1px solid red; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
 }
 
-body{
-    background-color:white;
-    color: #1c1e21;
-    overflow: hidden; 
-    font-family: Helvetica Neue, Helvetica Neue, Helvetica, Arial, sans-serif;
+body {
+  background-color: white;
+  color: #1c1e21;
+  overflow: hidden;
+  font-family: Helvetica Neue, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.transition-icon {
+  transition: color 0.33s linear 0.5s, border-color ease-out 0.5s,
+    background-color 0.33s linear 0s;
 }

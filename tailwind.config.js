@@ -19,6 +19,7 @@ module.exports = {
         "translate-x-2": "transX 3s ease-in infinite",
         "translate-x-3": "transX 4s ease-in infinite",
         "marquee-2": "marquee2 2s ease-in infinite",
+        "maybe":"color .33s linear .5s, border-color ease-out .5s, background-color .33s linear 0s"
       },
       keyframes: {
         borderAnimation: {
