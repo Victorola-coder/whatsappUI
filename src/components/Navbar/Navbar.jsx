@@ -10,12 +10,12 @@ import {
 import logo from "../../assets/images/logo.png";
 
 const Navbar = () => {
-  const [isOpened, setIsOpened] = useState(true);
+  const [isOpened, setIsOpened] = useState(false);
 
   const navlinks = [
     {
       id: 1,
-      text: "Featues",
+      text: "Features",
       link: "/#features",
       //   active: false,
     },
